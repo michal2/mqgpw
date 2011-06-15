@@ -45,7 +45,7 @@ public class MainServlet extends HttpServlet {
 			HttpServletResponse response) throws ServletException, IOException {
 
 		String elem = "Unknown exception";
-		/*try {
+		try {
 			elem = getQueueElement();
 
 		} catch (JMSException e) {
@@ -53,12 +53,15 @@ public class MainServlet extends HttpServlet {
 			elem = "JMS Exception";
 
 		} finally {
-			getServletContext().setAttribute("elem", elem);*/
+			getServletContext().setAttribute("elem", elem);
 			
-			Map<String, Number> data = new HashMap<String, Number>();
-			String tmp="aaaaa;1#bbbbb;2#cccccc;3#ddddd;4#eeeee;10";
+		Map<String, Number> data = new HashMap<String, Number>();
+		//	String tmp="aaaaa;1#bbbbb;2#cccccc;3#ddddd;4#eeeee;10";
+		System.out.println("elem: "+elem);	
+		
+		
+			String[] dane=elem.split("#");
 			
-			String[] dane=tmp.split("#");
 			for(String s : dane){
 				
 				String [] element=s.split(";");
@@ -74,7 +77,7 @@ public class MainServlet extends HttpServlet {
 			doChart(data);
 			response.sendRedirect("index.jsp");
 
-		//}
+		}
 
 	}
 

@@ -18,7 +18,7 @@
 	
 	<form action="main" method="post">
 				<%if (getServletContext().getAttribute("BadDataFormat")==null){ %>
-					<img src="file:///home/damian/Pobrane/eclipse/chart.png" />
+					<img src="chart.png" />
 				<%}else{%>
 				<h3><%=getServletContext().getAttribute("BadDataFormat")%></h3>
 				<%}%>
