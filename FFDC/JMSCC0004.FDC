@@ -1,0 +1,247 @@
+----------------------------------START FFST------------------------------------
+/home/pawel/workspace/MQWebClient/FFDC/JMSCC0004.FDC PID:10205
+
+                                    FDCTitle
+                                            
+
+Product          :- IBM WebSphere MQ classes for JMS
+Date/Time        :- Mon Jun 13 23:47:57 CEST 2011
+System time      :- 1308001677370
+Operating System :- Linux
+UserID           :- pawel
+Java Vendor      :- Sun Microsystems Inc.
+Java Version     :- 20.0-b11
+
+Source Class     :- com.ibm.mq.jms.MQQueueConnectionFactory
+Source Method    :- readObject()
+ProbeID          :- XF001003
+Thread           :- name=main priority=5 group=main ccl=sun.misc.Launcher$AppClassLoader@d9f9c3
+
+                                      Data
+                                      ----
+
+Data        :- none
+
+                              Version information
+                              -------------------
+
+Java Message Service Client
+7.0.1.3
+k701-103-100812
+Production
+
+WebSphere MQ classes for Java Message Service
+7.0.1.3
+k701-103-100812
+Production
+
+IBM WebSphere MQ
+7.0.1.3
+k701-103-100812
+Production
+
+Common Services for Java Platform, Standard Edition
+7.0.1.3
+k701-103-100812
+Production
+
+
+
+                                  Stack trace
+                                  -----------
+
+Stack trace to show the location of the FFST call
+|   FFST Location  :-  java.lang.Exception
+|   	at com.ibm.msg.client.commonservices.trace.Trace.getCurrentPosition(Trace.java:1714)
+|   	at com.ibm.msg.client.commonservices.trace.Trace.createFFSTString(Trace.java:1653)
+|   	at com.ibm.msg.client.commonservices.trace.Trace.ffstInternal(Trace.java:1536)
+|   	at com.ibm.msg.client.commonservices.trace.Trace.ffst(Trace.java:1395)
+|   	at com.ibm.mq.jms.MQConnectionFactory.initialiseMQConnectionFactory(MQConnectionFactory.java:3335)
+|   	at com.ibm.mq.jms.MQConnectionFactory.<init>(MQConnectionFactory.java:274)
+|   	at com.ibm.mq.jms.MQQueueConnectionFactory.<init>(MQQueueConnectionFactory.java:76)
+|   	at pl.edu.uj.www.MainServlet.getQueueElement(MainServlet.java:61)
+|   	at pl.edu.uj.www.MainServlet.main(MainServlet.java:114)
+|   
+
+                            Property Store Contents
+                            -----------------------
+
+All currently set properties
+|   file.encoding                  :-  UTF-8
+|   file.encoding.pkg              :-  sun.io
+|   file.separator                 :-  /
+|   java.awt.graphicsenv           :-  sun.awt.X11GraphicsEnvironment
+|   java.awt.printerjob            :-  sun.print.PSPrinterJob
+|   java.class.path                :-  /home/pawel/workspace/MQWebClient/build/classes:/home/pawel/workspace/MQWebClient/lib/com.ibm.mq.axis2.jar:/home/pawel/workspace/MQWebClient/lib/com.ibm.mq.commonservices.jar:/home/pawel/workspace/MQWebClient/lib/com.ibm.mq.jar:/home/pawel/workspace/MQWebClient/lib/com.ibm.mq.headers.jar:/home/pawel/workspace/MQWebClient/lib/com.ibm.mq.pcf.jar:/home/pawel/workspace/MQWebClient/lib/com.ibm.mq.jmqi.jar:/home/pawel/workspace/MQWebClient/lib/com.ibm.mq.defaultconfig.jar:/home/pawel/workspace/MQWebClient/lib/com.ibm.mq.jms.Nojndi.jar:/home/pawel/workspace/MQWebClient/lib/com.ibm.mq.postcard.jar:/home/pawel/workspace/MQWebClient/lib/com.ibm.mq.soap.jar:/home/pawel/workspace/MQWebClient/lib/com.ibm.mq.tools.ras.jar:/home/pawel/workspace/MQWebClient/lib/jms.jar:/home/pawel/workspace/MQWebClient/lib/com.ibm.mqjms.jar:/home/pawel/workspace/MQWebClient/lib/gnujaxp.jar:/home/pawel/workspace/MQWebClient/lib/iText-2.1.5.jar:/home/pawel/workspace/MQWebClient/lib/javax.jms.jar:/home/pawel/workspace/MQWebClient/lib/javax.servlet.jar:/home/pawel/workspace/MQWebClient/lib/jcommon-1.0.16.jar:/home/pawel/workspace/MQWebClient/lib/jfreechart-1.0.13.jar:/home/pawel/workspace/MQWebClient/lib/jfreechart-1.0.13-experimental.jar:/home/pawel/workspace/MQWebClient/lib/jfreechart-1.0.13-swt.jar:/home/pawel/workspace/MQWebClient/lib/junit.jar:/home/pawel/workspace/MQWebClient/lib/servlet.jar:/home/pawel/workspace/MQWebClient/lib/swtgraphics2d.jar:/home/pawel/workspace/MQWebClient/lib/com.ibm.mq.osgi.directip_7.0.1.3.jar:/home/pawel/workspace/MQWebClient/lib/com.ibm.msg.client.osgi.commonservices.j2se_7.0.1.3.jar:/home/pawel/workspace/MQWebClient/lib/com.ibm.msg.client.osgi.jms.prereq_7.0.1.3.jar:/home/pawel/workspace/MQWebClient/lib/com.ibm.msg.client.osgi.jms_7.0.1.3.jar:/home/pawel/workspace/MQWebClient/lib/com.ibm.msg.client.osgi.nls_7.0.1.3.jar:/home/pawel/workspace/MQWebClient/lib/com.ibm.msg.client.osgi.wmq.nls_7.0.1.3.jar:/home/pawel/workspace/MQWebClient/lib/com.ibm.msg.client.osgi.wmq.prereq_7.0.1.3.jar:/home/pawel/workspace/MQWebClient/lib/com.ibm.msg.client.osgi.wmq_7.0.1.3.jar
+|   java.class.version             :-  50.0
+|   java.endorsed.dirs             :-  /usr/lib/jvm/java-6-openjdk/jre/lib/endorsed
+|   java.ext.dirs                  :-  /usr/lib/jvm/java-6-openjdk/jre/lib/ext:/usr/java/packages/lib/ext
+|   java.home                      :-  /usr/lib/jvm/java-6-openjdk/jre
+|   java.io.tmpdir                 :-  /tmp
+|   java.library.path              :-  /usr/lib/jvm/java-6-openjdk/jre/lib/i386/client:/usr/lib/jvm/java-6-openjdk/jre/lib/i386:/usr/lib/jvm/java-6-openjdk/jre/../lib/i386:/usr/lib/jvm/java-6-openjdk/jre/lib/i386/client:/usr/lib/jvm/java-6-openjdk/jre/lib/i386::/usr/java/packages/lib/i386:/usr/lib/i386-linux-gnu/jni:/lib/i386-linux-gnu:/usr/lib/i386-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+|   java.runtime.name              :-  OpenJDK Runtime Environment
+|   java.runtime.version           :-  1.6.0_22-b22
+|   java.specification.name        :-  Java Platform API Specification
+|   java.specification.vendor      :-  Sun Microsystems Inc.
+|   java.specification.version     :-  1.6
+|   java.vendor                    :-  Sun Microsystems Inc.
+|   java.vendor.url                :-  http://java.sun.com/
+|   java.vendor.url.bug            :-  http://java.sun.com/cgi-bin/bugreport.cgi
+|   java.version                   :-  1.6.0_22
+|   java.vm.info                   :-  mixed mode, sharing
+|   java.vm.name                   :-  OpenJDK Client VM
+|   java.vm.specification.name     :-  Java Virtual Machine Specification
+|   java.vm.specification.vendor   :-  Sun Microsystems Inc.
+|   java.vm.specification.version  :-  1.0
+|   java.vm.vendor                 :-  Sun Microsystems Inc.
+|   java.vm.version                :-  20.0-b11
+|   line.separator                 :-  
+|   
+|   os.arch                        :-  i386
+|   os.name                        :-  Linux
+|   os.version                     :-  2.6.38-10-generic
+|   path.separator                 :-  :
+|   sun.arch.data.model            :-  32
+|   sun.boot.class.path            :-  /usr/lib/jvm/java-6-openjdk/jre/lib/resources.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/rt.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/jsse.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/jce.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/charsets.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/netx.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/plugin.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/rhino.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/modules/jdk.boot.jar:/usr/lib/jvm/java-6-openjdk/jre/classes
+|   sun.boot.library.path          :-  /usr/lib/jvm/java-6-openjdk/jre/lib/i386
+|   sun.cpu.endian                 :-  little
+|   sun.cpu.isalist                :-  
+|   sun.desktop                    :-  gnome
+|   sun.io.unicode.encoding        :-  UnicodeLittle
+|   sun.java.command               :-  pl.edu.uj.www.MainServlet
+|   sun.java.launcher              :-  SUN_STANDARD
+|   sun.jnu.encoding               :-  UTF-8
+|   sun.management.compiler        :-  HotSpot Client Compiler
+|   sun.os.patch.level             :-  unknown
+|   user.country                   :-  PL
+|   user.dir                       :-  /home/pawel/workspace/MQWebClient
+|   user.home                      :-  /home/pawel
+|   user.language                  :-  pl
+|   user.name                      :-  pawel
+|   user.timezone                  :-  
+
+                           WorkQueueMananger Contents
+                           --------------------------
+
+|   Current ThreadPool size      :-  0
+|   Maintain ThreadPool size     :-  false
+|   Maximum ThreadPool size      :-  -1
+|   ThreadPool inactive timeout  :-  0
+
+                               Runtime properties
+                               ------------------
+
+|   Available processors         :-  2
+|   Free memory in bytes (now)   :-  12293872
+|   Max memory in bytes          :-  506855424
+|   Total memory in bytes (now)  :-  15859712
+
+                           Component Manager Contents
+                           --------------------------
+
+Common Services Components:
+|   CMVC               :-  k701-103-100812
+|   Class Name         :-  class com.ibm.msg.client.commonservices.j2se.J2SEComponent
+|   Component Name     :-  com.ibm.msg.client.commonservices.j2se
+|   Component Title    :-  Common Services for Java Platform, Standard Edition
+|   Factory Class      :-  class com.ibm.msg.client.commonservices.j2se.CommonServicesImplementation
+|   Version            :-  7.0.1.3
+|   inPreferenceTo[0]  :-  com.ibm.msg.client.commonservices.j2me
+
+Messaging Provider Components:
+|   CMVC             :-  k701-103-100812
+|   Class Name       :-  class com.ibm.msg.client.wmq.factories.WMQComponent
+|   Component Name   :-  com.ibm.msg.client.wmq
+|   Component Title  :-  IBM WebSphere MQ
+|   Factory Class    :-  class com.ibm.msg.client.wmq.factories.WMQFactoryFactory
+|   Version          :-  7.0.1.3
+
+
+
+                             FFST Object Properties
+                             ----------------------
+
+All currently set properties
+|   XMSC_CONNECTION_TYPE       :-  1
+|   XMSC_CONNECTION_TYPE_NAME  :-  com.ibm.msg.client.wmq
+
+                         Provider Specific Information
+                         -----------------------------
+
+Overview of JMS System
+Num. Connections : 0
+Num. Sessions    : 0
+Num. Consumers   : 0
+Num. Producers   : 0
+
+Detailed JMS System Information
+Connections      : 
+Sessions         : 
+Consumers        : 
+Producers        : 
+
+All Thread Information
+
+                          Name : Reference Handler
+                      Priority : 10
+                   ThreadGroup : java.lang.ThreadGroup[name=system,maxpri=10]
+                            ID : 2
+                         State : WAITING
+                         Stack : java.lang.Object.wait(Object.java:-2)
+                               : java.lang.Object.wait(Object.java:502)
+                               : java.lang.ref.Reference$ReferenceHandler.run(Reference.java:133)
+
+                          Name : Finalizer
+                      Priority : 8
+                   ThreadGroup : java.lang.ThreadGroup[name=system,maxpri=10]
+                            ID : 3
+                         State : WAITING
+                         Stack : java.lang.Object.wait(Object.java:-2)
+                               : java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:133)
+                               : java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:149)
+                               : java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:177)
+
+                          Name : Signal Dispatcher
+                      Priority : 9
+                   ThreadGroup : java.lang.ThreadGroup[name=system,maxpri=10]
+                            ID : 4
+                         State : RUNNABLE
+
+                          Name : JMSCCThreadPoolMaster
+                      Priority : 5
+                   ThreadGroup : java.lang.ThreadGroup[name=main,maxpri=10]
+                            ID : 8
+                         State : WAITING
+                         Stack : java.lang.Object.wait(Object.java:-2)
+                               : java.lang.Object.wait(Object.java:502)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$WorkQueueManagerThread.waitForNotification(WorkQueueManagerImplementation.java:651)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$WorkQueueManagerThread.waitForNotification(WorkQueueManagerImplementation.java:621)
+                               : com.ibm.msg.client.commonservices.j2se.workqueue.WorkQueueManagerImplementation$WorkQueueManagerThread.run(WorkQueueManagerImplementation.java:887)
+
+                          Name : main
+                      Priority : 5
+                   ThreadGroup : java.lang.ThreadGroup[name=main,maxpri=10]
+                            ID : 1
+                         State : RUNNABLE
+                         Stack : java.lang.Thread.dumpThreads(Thread.java:-2)
+                               : java.lang.Thread.getAllStackTraces(Thread.java:1546)
+                               : sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+                               : sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+                               : sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                               : java.lang.reflect.Method.invoke(Method.java:616)
+                               : com.ibm.msg.client.commonservices.j2se.trace.DefaultTracer.getAllThreads(DefaultTracer.java:1492)
+                               : com.ibm.msg.client.commonservices.j2se.trace.DefaultTracer.generateThreadInfo(DefaultTracer.java:1313)
+                               : com.ibm.msg.client.commonservices.j2se.trace.DefaultTracer.access$1200(DefaultTracer.java:145)
+                               : com.ibm.msg.client.commonservices.j2se.trace.DefaultTracer$8.run(DefaultTracer.java:1263)
+                               : java.security.AccessController.doPrivileged(AccessController.java:-2)
+                               : com.ibm.msg.client.commonservices.j2se.trace.DefaultTracer.ffst(DefaultTracer.java:1196)
+                               : com.ibm.msg.client.commonservices.trace.Trace.ffstInternal(Trace.java:1541)
+                               : com.ibm.msg.client.commonservices.trace.Trace.ffst(Trace.java:1395)
+                               : com.ibm.mq.jms.MQConnectionFactory.initialiseMQConnectionFactory(MQConnectionFactory.java:3335)
+                               : com.ibm.mq.jms.MQConnectionFactory.<init>(MQConnectionFactory.java:274)
+                               : com.ibm.mq.jms.MQQueueConnectionFactory.<init>(MQQueueConnectionFactory.java:76)
+                               : pl.edu.uj.www.MainServlet.getQueueElement(MainServlet.java:61)
+                               : pl.edu.uj.www.MainServlet.main(MainServlet.java:114)
+
+First Failure Symptom Report completed at Mon Jun 13 23:47:57 CEST 2011
+------------------------------------END FFST------------------------------------
