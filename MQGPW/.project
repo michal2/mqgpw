@@ -33,4 +33,10 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
 	</natures>
+	<variableList>
+		<variable>
+			<name>WEBSPHERE</name>
+			<value>file:/C:/Program%20Files%20(x86)/IBM/WebSphere%20MQ</value>
+		</variable>
+	</variableList>
 </projectDescription>

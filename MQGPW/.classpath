@@ -13,6 +13,18 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="C:/Program Files (x86)/IBM/WebSphere MQ/java"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/IBM/WebSphere MQ/java/lib/com.ibm.mq.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/IBM/WebSphere MQ/java/lib/com.ibm.mq.commonservices.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/IBM/WebSphere MQ/java/lib/com.ibm.mq.defaultconfig.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/IBM/WebSphere MQ/java/lib/com.ibm.mq.fta.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/IBM/WebSphere MQ/java/lib/com.ibm.mq.headers.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/IBM/WebSphere MQ/java/lib/com.ibm.mq.jmqi.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/IBM/WebSphere MQ/java/lib/com.ibm.mq.jms.Nojndi.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/IBM/WebSphere MQ/java/lib/com.ibm.mq.pcf.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/IBM/WebSphere MQ/java/lib/com.ibm.mq.postcard.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/IBM/WebSphere MQ/java/lib/com.ibm.mq.soap.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/IBM/WebSphere MQ/java/lib/com.ibm.mq.tools.ras.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/IBM/WebSphere MQ/java/lib/com.ibm.mqetclient.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/IBM/WebSphere MQ/java/lib/com.ibm.mqjms.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

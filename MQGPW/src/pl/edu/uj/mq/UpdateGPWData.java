@@ -22,7 +22,6 @@ import com.ibm.mq.jms.MQQueueReceiver;
 import com.ibm.mq.jms.MQQueueSender;
 import com.ibm.mq.jms.MQQueueSession;
 
-
 /**
  * Servlet implementation class UpdateGPWData
  */
@@ -52,10 +51,13 @@ public class UpdateGPWData extends HttpServlet {
 		out.print("<HTML><HEAD><TITLE></TITLE></HEAD>");
 
 		try {
-			sendTestMSg("OK");
 
-		} catch (JMSException e) {
-			out.print("<p>" + e.getMessage() + "</p>");
+			//load data
+			//XMLLoader loader = new XMLLoader();			
+			
+		    long randomNumber = System.currentTimeMillis() % 1000;
+			setQueueElement("AGORA;0.59#08OCTAVA;2.73#4FUNMEDIA;16.36#ABCDATA;3.25#ABMSOLID;8.9#ABPL;24.06");
+
 		} catch (Exception e) {
 			out.print("<p>" + e.getMessage() + "</p>");
 		}
@@ -66,6 +68,52 @@ public class UpdateGPWData extends HttpServlet {
 		out.close();
 	}
 
+
+	private static boolean setQueueElement(String msg) throws JMSException {
+
+		MQQueueConnectionFactory cf = null;
+		MQQueueConnection connection = null;
+		MQQueueSession session = null;
+		MQQueue queue = null;
+	    MQQueueSender sender=null;
+
+		cf = new MQQueueConnectionFactory();
+
+		// Config
+		cf.setHostName("macosx.hopto.org");
+		cf.setPort(1414);
+		cf.setTransportType(JMSC.MQJMS_TP_CLIENT_MQ_TCPIP);
+		cf.setQueueManager("QM_mp_Komputer");
+		cf.setChannel("S_mp_Komputer");
+
+		connection = (MQQueueConnection) cf.createQueueConnection();
+		session = (MQQueueSession) connection.createQueueSession(false,
+				Session.AUTO_ACKNOWLEDGE);
+
+		queue = (MQQueue) session.createQueue("queue:///gpw");
+		 sender = (MQQueueSender) session.createSender(queue);
+		//receiver = (MQQueueReceiver) session.createReceiver(queue);
+
+
+		
+		 JMSTextMessage message = (JMSTextMessage)
+		 session.createTextMessage(msg);
+
+		// Start the connection
+		connection.start();
+
+		
+		
+		
+		 sender.send(message);
+		// System.out.println("Sent message:\\n" + message);
+
+		 connection.close();
+		 
+		return true;
+	}	
+	
+	
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
 	 *      response)
@@ -73,49 +121,6 @@ public class UpdateGPWData extends HttpServlet {
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-	}
-
-	public void sendTestMSg(String msgText) throws NamingException,
-			JMSException {
-		QueueConnection queueCon = null;
-		try {
-
-			Hashtable env = new Hashtable();
-
-			env.put(Context.INITIAL_CONTEXT_FACTORY,
-					"com.sun.jndi.fscontext.RefFSContextFactory");
-
-			env.put(Context.PROVIDER_URL, "file:///c:/imq_admin_objects");
-
-			// get the initial context, refer to your app server docs for this
-			Context ctx = new InitialContext(env);
-
-			// get the connection factory, and open a connection
-			QueueConnectionFactory qcf = (QueueConnectionFactory) ctx
-					.lookup("QM_GPW");
-			queueCon = qcf.createQueueConnection();
-
-			// create queue session off the connection
-			QueueSession queueSession = queueCon.createQueueSession(false,
-					Session.AUTO_ACKNOWLEDGE);
-
-			// get handle on queue, create a sender and send the message
-			Queue queue = (Queue) ctx.lookup("jms/queue/devilman");
-			QueueSender sender = queueSession.createSender(queue);
-
-			Message msg = queueSession.createTextMessage("hello...");
-
-			msg.setBooleanProperty("ACK_DEBUG", true);
-			msg.setFloatProperty("ACK_BALANCE", 24234.44f);
-			sender.send(msg);
-
-			System.out.println("sent the message");
-		} finally {
-			// close the queue connection
-			if (queueCon != null) {
-				queueCon.close();
-			}
-		}
 	}
 
 }

@@ -5,11 +5,11 @@
 <html>
   <head>
     	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    	<title>GlassFish JSP Page</title>
+    	<title>MQ GPW UPDATE</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <a href="/webtest/UpdateGPWData">Update GPW Data</a>
+    <h1>Hello!</h1>
+    <a href="/MQGPW/UpdateGPWData">Update GPW Data</a>
     
   </body>
 </html> 
