@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="WebContent"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/CL3Export.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/CL3Nonexport.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/com.ibm.mq.axis2.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/com.ibm.mq.commonservices.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/com.ibm.mq.defaultconfig.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/com.ibm.mq.headers.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/com.ibm.mq.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/com.ibm.mq.jmqi.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/com.ibm.mq.jms.Nojndi.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/com.ibm.mq.osgi.directip_7.0.1.3.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/com.ibm.mq.pcf.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/com.ibm.mq.postcard.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/com.ibm.mq.soap.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/com.ibm.mq.tools.ras.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/com.ibm.mqjms.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/com.ibm.msg.client.osgi.commonservices.j2se_7.0.1.3.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/com.ibm.msg.client.osgi.jms.prereq_7.0.1.3.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/com.ibm.msg.client.osgi.jms_7.0.1.3.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/com.ibm.msg.client.osgi.nls_7.0.1.3.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/com.ibm.msg.client.osgi.wmq.nls_7.0.1.3.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/com.ibm.msg.client.osgi.wmq.prereq_7.0.1.3.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/com.ibm.msg.client.osgi.wmq_7.0.1.3.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/connector.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/dhbcore.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/fscontext.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/gnujaxp.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/iText-2.1.5.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/javax.jms.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/javax.servlet.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/jcommon-1.0.16.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/jfreechart-1.0.13.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/jfreechart-1.0.13-experimental.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/jfreechart-1.0.13-swt.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/jms.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/jndi.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/jta.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/junit.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/ldap.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/providerutil.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/rmm.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/servlet.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/swtgraphics2d.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/soap/commons-discovery-0.2.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/soap/commons-logging-1.0.4.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/soap/jaxrpc.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/soap/saaj.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/soap/servlet.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/soap/wsdl4j-1.5.1.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/OSGi/com.ibm.mq.osgi.directip_7.0.1.3.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/OSGi/com.ibm.msg.client.osgi.commonservices.j2se_7.0.1.3.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/OSGi/com.ibm.msg.client.osgi.jms.prereq_7.0.1.3.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/OSGi/com.ibm.msg.client.osgi.jms_7.0.1.3.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/OSGi/com.ibm.msg.client.osgi.nls_7.0.1.3.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/OSGi/com.ibm.msg.client.osgi.wmq.nls_7.0.1.3.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/OSGi/com.ibm.msg.client.osgi.wmq.prereq_7.0.1.3.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/damian/Pulpit/dla Damiana/MQWebClient/WebContent/WEB-INF/lib/OSGi/com.ibm.msg.client.osgi.wmq_7.0.1.3.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
