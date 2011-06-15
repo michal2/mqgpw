@@ -10,17 +10,11 @@
 
 	<h1>Dzieñ dobry !</h1>
 	
-	
-	<h3>Element z kolejki: <%=getServletContext().getAttribute("elem")%></h3>
-	
-	
-	
-	
 	<form action="main" method="post">
 				<%if (getServletContext().getAttribute("BadDataFormat")==null){ %>
-					<img src="chart.png" />
+					<img src="chart.png" alt="No data available."/>
 				<%}else{%>
-				<h3><%=getServletContext().getAttribute("BadDataFormat")%></h3>
+				<h3><% getServletContext().getAttribute("BadDataFormat").toString();%></h3>
 				<%}%>
 				<input type="submit" value="refresh" /> 
 	</form>

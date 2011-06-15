@@ -37,6 +37,7 @@ import com.ibm.mq.jms.MQQueueSession;
 public class MainServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
+	
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
 	 *      response)
@@ -44,7 +45,8 @@ public class MainServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 
-		String elem = "Unknown exception";
+		System.out.println("refreshing...");
+		String elem = null;
 		try {
 			elem = getQueueElement();
 
@@ -53,27 +55,33 @@ public class MainServlet extends HttpServlet {
 			elem = "JMS Exception";
 
 		} finally {
-			getServletContext().setAttribute("elem", elem);
-			
-		Map<String, Number> data = new HashMap<String, Number>();
-		//	String tmp="aaaaa;1#bbbbb;2#cccccc;3#ddddd;4#eeeee;10";
-		System.out.println("elem: "+elem);	
-		
-		
-			String[] dane=elem.split("#");
-			
-			for(String s : dane){
-				
-				String [] element=s.split(";");
-				
-				if(element.length!=2){
-					getServletContext().setAttribute("BadDataFormat", element);
-				}
-				
-				data.put(element[0],Double.parseDouble(element[1]));
-				
+
+			Map<String, Number> data = new HashMap<String, Number>();
+			//elem = "aaaaa;1#bbbbb;2#cccccc;3#ddddd;4#eeeee;10";
+
+			if (elem == null) {
+				System.out
+						.println("An internal error has occurred.!\nYour computer will explode in 2 minutes!");
+				return;
 			}
-			
+
+			System.out.println("elem: " + elem);
+
+			String[] dane = elem.split("#");
+
+			for (String s : dane) {
+
+				String[] element = s.split(";");
+
+				if (element.length != 2) {
+					getServletContext().setAttribute("BadDataFormat", element);
+					return;
+				}
+
+				data.put(element[0], Double.parseDouble(element[1]));
+
+			}
+
 			doChart(data);
 			response.sendRedirect("index.jsp");
 
@@ -83,6 +91,7 @@ public class MainServlet extends HttpServlet {
 
 	private static String getQueueElement() throws JMSException {
 
+		System.out.println("connecting to mq ...");
 		MQQueueConnectionFactory cf = null;
 		MQQueueConnection connection = null;
 		MQQueueSession session = null;
@@ -113,11 +122,12 @@ public class MainServlet extends HttpServlet {
 
 		// Start the connection
 		connection.start();
-
+		System.out.println("connection established.");
 		// sender.send(message);
 		// System.out.println("Sent message:\\n" + message);
 
 		JMSMessage receivedMessage = (JMSMessage) receiver.receive(10000);
+		System.out.println("receiving message...");
 		if (receivedMessage instanceof JMSTextMessage) {
 			JMSTextMessage txt = (JMSTextMessage) receivedMessage;
 			System.out.println("Message Received: " + txt.getText());
@@ -160,22 +170,16 @@ public class MainServlet extends HttpServlet {
 				209, 228, 246), 0.0F, 0.0F, new Color(82, 141, 201));
 		BarRenderer r = (BarRenderer) chart.getCategoryPlot().getRenderer();
 		r.setSeriesPaint(0, gradientpaint0);
-		File f=new File("chart.png");
+		String path = this.getServletContext().getRealPath("")+"/chart.png"; 
+		File f = new File(path);
+
 		try {
-			ChartUtilities.saveChartAsPNG(f, chart, 400,
-					300);
-			System.out.println("Wykres zapisano: "+f.getAbsoluteFile());
+			ChartUtilities.saveChartAsPNG(f, chart, 400, 300);
+			System.out.println("Wykres zapisano: " + f.getPath());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		/*
-		 * try { ServletOutputStream out = response.getOutputStream();
-		 * response.setContentType("image/png");
-		 * ChartUtilities.writeChartAsPNG(out, chart, 400, 300); out.close();
-		 * response.sendRedirect("index.jsp"); } catch (IOException e) {
-		 * System.out.println("Problem ze stworzeniem wykresu!");
-		 * e.printStackTrace(); }
-		 */
+		
 	}
 
 	public static void main(String[] args) {
